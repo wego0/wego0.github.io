@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+.misc/
+.deploy_git/
+CNAME
+debug.log
+cmd2Ruby.lnk
+*.bat
+4gcwgo
+package-lock.json
+package required.txt
