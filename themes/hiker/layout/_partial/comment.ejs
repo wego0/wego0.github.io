@@ -1,38 +1,28 @@
-<% if (theme.gentie_productKey){ %>
-	<!-- 网易云跟帖 start -->
-	<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-	<script>
-	  var cloudTieConfig = {
-	    url: document.location.href, 
-	    sourceId: "",
-	    productKey: "<%- theme.gentie_productKey %>",
-	    target: "cloud-tie-wrapper"
-	  };
-	</script>
-	<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-	<!-- 网易云跟帖 end -->
-	
-<% } else if (theme.duoshuo_shortname) {%>
-	<div id="comment">
-	
-	<!-- 多说评论框 start -->
-	 <div class="ds-thread" data-thread-key="<%- config.root %><%- post.path %>" data-title="<%- post.title %>" data-url="<%- post.permalink %>"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"<%- theme.duoshuo_shortname %>"};
-	  (function() {
-	    var ds = document.createElement('script');
-	    ds.type = 'text/javascript';ds.async = true;
-	    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	    ds.charset = 'UTF-8';
-	    (document.getElementsByTagName('head')[0] 
-	     || document.getElementsByTagName('body')[0]).appendChild(ds);
-	  })();
-	  </script>
-	<!-- 多说公共JS代码 end -->
-	
-	</div>
+<% if (theme.valine.enable ){ %>
+    <!-- Valine Comments -->
+    <div class="comments" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = '<%= theme.valine.guest_info %>'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comment',
+            notify: '<%= theme.valine.notify %>' == 'true',
+            verify: '<%= theme.valine.verify %>' == 'true',
+            appId: "<%= theme.valine.appId %>",
+            appKey: "<%= theme.valine.appKey %>",
+            avatar: "<%= theme.valine.avatar %>",
+            placeholder: "<%= theme.valine.placeholder %>",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "<%= theme.valine.pageSize %>"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
 <% } else if (theme.disqus_shortname) {%>
 	<section id="comments" class="comment">
 	  <div id="disqus_thread">
@@ -73,6 +63,7 @@
 		</script>
 		<!-- UY END -->
 	</section>
+
 <% } else if (theme.wumii) {%>
 	<div id="comment">
 		<script type="text/javascript" id="wumiiComments">
@@ -83,6 +74,7 @@
 	   	</script>
 		<script type="text/javascript" src="http://widget.wumii.cn/ext/cw/widget"></script>
 	</div>
+
 <% } else if (theme.livere_shortname) {%>
 	<div id="comment">
 		<!-- 来必力City版安装代码 -->

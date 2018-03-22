@@ -4,27 +4,32 @@
 
 # Header Menu
 menu:
-  Home: /
-  Archives: archives
-  Categories: categories
-  Tags: tags
-  About: about
+  home: /
+  archives: archives
+  categories: categories
+  tags: tags
+  # search: search
+  blogroll: blogroll
+  about: about
 rss: /atom.xml
 
-since: 2013
+since: 2016
 
 # Set default keywords (Use a comma to separate)
-keywords: ""
+keywords: "日新知,日新,知诺,知行诺一"
 
 # Put your favicon.ico or avatar.jpg into `hexo-site/themes/hiker/source/` directory.
 avatar: 
   enable: true
   border: true
-  width: 124
-  height: 124
-  top: 0
-  url: css/images/mylogo.jpg
+  width: 150   #82
+  height: 36   #82
+  top: 27
+  url: css/images/mylogo.png
 
+favicon:
+  enable: true
+  url: css/images/favicon.ico
 
 # Homepage
 # eg. home_background_image: [css/images/home-bg.jpg, http://t.cn/RMbvEza]
@@ -34,9 +39,10 @@ home_background_image:
   mode: image
   rolling: true
   url: [css/images/home-bg.jpg, css/images/sample.jpg, https://source.unsplash.com/collection/954550/1920x1080]
+  #text: [111, 222, 333]
 
 home_logo_image:
-  enable: false
+  enable: true
   border: false
   url: css/images/homelogo.jpg
 
@@ -62,25 +68,26 @@ fancybox: true
 sidebar: right
 widgets:
 - social
-- category
-- tag
-- tagcloud
-- archive
+# - category
+# - tag
 - recent_posts
+- tagcloud
+# - archive
+
 
 
 # Social Links
 # Key is the name of FontAwsome icon.
 # Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
 social:
-  Github: https://github.com/iTimeTraveler
-  Weibo: http://www.yoursite.com
+  Github: https://github.com/Wegome
+  Weibo: https://www.weibo.com/budaig
   Twitter: 
-  Facebook: 
-  Google-plus: 
+#  Facebook: 
+#  Google-plus: 
   Instagram: 
-  Pinterest: 
-  Flickr: 
+#  Pinterest: 
+#  Flickr: 
   email:
 
 
@@ -92,13 +99,23 @@ search:
 
 
 # comment ShortName, you can choose only ONE to display.
-gentie_productKey: #your-gentie-product-key
-duoshuo_shortname: 
 disqus_shortname: 
-livere_shortname: MTAyMC8yOTQ4MS82MDQ5
+livere_shortname: MTAyMC8yOTU2Ny82MTM1
 uyan_uid: 
 wumii: 
-
+# Valine Comment system. https://valine.js.org
+valine:
+  enable: false # 如果你想使用valine，请将值设置为 true
+  appId: 
+  appKey: 
+  notify: false # Mail notify
+  verify: false # Verify code
+  avatar: mm # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
+  placeholder: 闻言如见其人
+  guest_info: nick,mail,link # Comment header info
+  pageSize: 10 # comment list page size
+# Support for Hashover comments system.
+# hashover: true
 
 # Code Highlight theme
 # Available value:
@@ -150,7 +167,7 @@ facebook_sdk:
   webmaster:    #true
 
 # CNZZ count
-cnzz_siteid: 1260716016
+cnzz_siteid: 
 
 # busuanzi count
 # http://busuanzi.ibruce.info/
@@ -160,6 +177,11 @@ show_busuanzi_view_counts: true
 # donation button
 donate:
     enable: true
-    message: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!'
-    wechatImage: https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/WeChanQR.png
-    alipayImage: https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/AliPayQR.jpg
+    message: '！赏块 ¥ $ 爽快！!'
+    wechatImage: /css/images/wechat.jpg
+    alipayImage: /css/images/alipay.jpg
+
+# 文章摘要渲染方式: 为 true 时将渲染为 html，否则为文本
+excerpt_render: true
+excerpt_length: 168
+excerpt_link:  ... 阅读全文 ...
