@@ -164,15 +164,7 @@ deploy: # github coding 同时部署  多个 deploy 要使用 — type
     github: git@gitwgo:wego0/wego0.github.io.git,master   
     coding: git@codingwgo:wegoo/wegoo.git,coding-pages
 - type: baidu_url_submitter
-# deploy:
-  # type: ftpsync
-  # host: 192.168.98.101
-  # user: wego
-  # pass: 3155
-  # remote: /MF/www/hexowgm
-  # port: 2221
-  # connections: 1
-  # verbose: true
+
 
 # encrypt https://github.com/edolphin-ydf/hexo-encrypt
 # encrypt:
