@@ -132,8 +132,8 @@ theme_color: random
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
-# - category
-# - tagcloud
+  - category
+  - tagcloud
 # - archive
 
 
@@ -173,8 +173,13 @@ cnzz_siteid:
 # http://busuanzi.ibruce.info/
 show_busuanzi_view_counts: false
 
-ICP: 
+hostedby:
   enable: true
+  hostedby_url: https://page.coding.me
+  hostedby_name: Coding Pages
+
+ICP: 
+  enable: false
   ICP_license: 湘ICP备18004795号-2
   ICP_url: http://www.miitbeian.gov.cn
   ICP_text:    # 或 湘ICP备18004795号-1
