@@ -12,5 +12,6 @@ debug.log
 cmd2Ruby.lnk
 *.bat
 4gcwgo
+.gitignore
 package-lock.json
 package required.txt
