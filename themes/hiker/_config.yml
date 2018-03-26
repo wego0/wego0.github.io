@@ -100,7 +100,7 @@ search:
 
 # comment ShortName, you can choose only ONE to display.
 disqus_shortname: 
-livere_shortname: MTAyMC8yOTU2Ny82MTM1
+livere_shortname: MTAyMC8zNTE5Ny8xMTczMg
 uyan_uid: 
 wumii: 
 # Valine Comment system. https://valine.js.org
@@ -175,11 +175,11 @@ show_busuanzi_view_counts: false
 
 hostedby:
   enable: true
-  hostedby_url: https://page.coding.me
+  hostedby_url: https://pages.coding.me
   hostedby_name: Coding Pages
 
 ICP: 
-  enable: false
+  enable: true
   ICP_license: 湘ICP备18004795号-2
   ICP_url: http://www.miitbeian.gov.cn
   ICP_text:    # 或 湘ICP备18004795号-1
