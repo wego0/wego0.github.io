@@ -10,7 +10,7 @@
   		  <% } %> <% if (theme.ICP.enable){ %>
   		   	 <% if (theme.hostedby.enable && theme.ICP.enable ){ %> * <% } %><a href="<%- theme.ICP.ICP_url %>" target="_blank" title="<%- theme.ICP.ICP_text %>"><%- theme.ICP.ICP_license %></a>
   		  <% } %> </p>
-	      <p id="copyRightEn">&copy; <%= theme.since ||  (date(new Date(), 'YYYY')-1)%> - <%= date(new Date(), 'YYYY') %> <a href="<%- config.root %>"><%= config.title || config.author %></a> * <%= __('powered_by') %> <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">hiker.</a></p>
+	      <p id="copyRightEn">&copy; <%= theme.since ||  (date(new Date(), 'YYYY')-1)%> - <%= date(new Date(), 'YYYY') %> <a href="<%- config.root %>"><%= config.title || config.author %></a> * <%= __('powered_by') %> <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">hiker</a></p>
 
 	      <% if (theme.show_busuanzi_view_counts){ %>
     		<p class="busuanzi_uv">

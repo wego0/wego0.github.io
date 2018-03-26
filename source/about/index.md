@@ -37,13 +37,6 @@ RSS （简易信息聚合）阅读器可以更方便的浏览小站文章。
 ### <span class="fa fa-share-alt"></span> Social Info
 
 
-- <span class="fa fa-envelope-o"></span> : [wego](mailto:imovomi@sina.com)
-- <span class="fa fa-google-plus"></span> : [wego](https://plus.google.com/)
+- <span class="fa fa-envelope-o"></span> : [wego](mailto:budaig@outlook.com)
+- <span class="fa fa-weibo"></span> : [wego](https://weibo.com/budaig)
 - <span class="fa fa-github"></span> : [wego](https://github.com/wego0)
-
-
-
-
-
-
-
