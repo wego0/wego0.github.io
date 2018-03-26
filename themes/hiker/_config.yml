@@ -44,7 +44,7 @@ home_background_image:
 home_logo_image:
   enable: true
   border: false
-  url: css/images/homelogo.jpg
+  url: css/images/homelogo.png
 
 
 # AboutPage background
