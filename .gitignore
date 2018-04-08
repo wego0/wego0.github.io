@@ -13,4 +13,5 @@ cmd2Ruby.lnk
 *.bat
 .gitignore
 package-lock.json
+amp-template/
 *.txt
