@@ -24,7 +24,7 @@ keyword: 日新知 日新 知诺 知行诺一 # your keywords
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://www.rixin.site
 root: /
-permalink: :category/:abbrlink.html    # :category-:abbrlink.html    # :category/:id.html    # :id-:title.html 
+permalink: :category/:abbrlink.html/    # :category-:abbrlink.html    # :category/:id.html    # :id-:title.html 
 permalink_default:
   lang: zh-CN
 
@@ -272,3 +272,16 @@ restful:
   post: true               # 文章数据
   pages: false             # 额外的 Hexo 页面数据, 如 About
 
+
+generator_amp:
+  templateDir:  amp-template
+  assetDistDir: amp-dist
+  logo:
+    path:   sample/sample-logo.png
+    width:  600
+    height: 60
+  substituteTitleImage:
+    path:   sample/sample-substituteTitleImage.png
+    width:  1024
+    height: 800
+  warningLog: false   # To display warning, please set true.
