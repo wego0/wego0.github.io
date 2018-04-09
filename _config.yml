@@ -24,7 +24,7 @@ keyword: 日新知 日新 知诺 知行诺一 # your keywords
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://www.rixin.site
 root: /
-permalink: :category/:abbrlink    # :category-:abbrlink.html    # :category/:id.html    # :id-:title.html 
+permalink: article/:abbrlink.html    # :category/:abbrlink.html    # :category/:id.html    # :id-:title.html
 permalink_default:
   lang: zh-CN
 
@@ -195,7 +195,7 @@ encrypt:
 # abbrlink config
 abbrlink:
   alg: crc32  #support crc16(default) and crc32
-  # rep: hex    #support dec(default) and hex
+  rep: hex    #support dec(default) and hex
   # crc32 & hex e.g. https://post.zz173.com/posts/8ddf18fb.html
   # crc32 & dec e.g. https://post.zz173.com/posts/1690090958.html
 
@@ -285,4 +285,4 @@ generator_amp:
     width:  1024
     height: 800
   warningLog: false   # To display warning, please set true.
-  generateAmpPath: amp/:category/:abbrlink
+  generateAmpPath: amp/article/:abbrlink.html
