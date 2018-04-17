@@ -40,3 +40,9 @@ RSS （简易信息聚合）阅读器可以更方便的浏览小站文章。
 - <span class="fa fa-envelope-o"></span> : [wego](mailto:budaig@outlook.com)
 - <span class="fa fa-weibo"></span> : [wego](https://weibo.com/budaig)
 - <span class="fa fa-github"></span> : [wego](https://github.com/wego0)
+
+
+---------------------------------------
+
+** <font color=green face=微软雅黑 size=4>友站链接：<font> **
+** <font color=green face=微软雅黑 size=3.5><a href="http://www.daheng3.top" target="_blank" rel="external">童畅享</a>优秀少儿动画介绍和感想，少儿教育理念方式方法的转摘，以及身为父母的你我他们的育儿体悟。</font> **
