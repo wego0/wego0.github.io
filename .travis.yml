@@ -17,6 +17,9 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_6a5d0d2bb8ce_key -iv $encrypted_6a5d0d2bb8ce_iv
   -in .travis/4gcwgo.enc -out ~/.ssh/4gcwgo -d
 - export TZ='Asia/Shanghai'
+- git init
+- git config user.name "wego0"
+- git config user.email "imovomi@sina.com"
 deploy:
   provider: script
   script: sh .travis/deploy.sh
