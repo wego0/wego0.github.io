@@ -16,6 +16,7 @@ ssh-add ~/.ssh/4gcwgo
 cp .travis/ssh_config ~/.ssh/config
 
 # Set Git config
+git init
 git config user.name "wego0"
 git config user.email "imovomi@sina.com"
 
