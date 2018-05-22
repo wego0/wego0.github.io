@@ -23,9 +23,9 @@
         <% if (post.itemlistimg){ %>
             <p><img src="<%- post.itemlistimg %>"></p>
         <% } %>
-        <%- truncate(strip_html(post.content), {
-            length: theme.excerpt_length
-        }) %>
+        <p class="article-excerpt-content">
+        <%- truncate(strip_html(post.content), {length: theme.excerpt_length }) %>
+        </p>
         <p class="article-more-link">
           <a href="<%- url_for(post.path) %>#more"><%= __('read_more') %></a>
         </p>
@@ -42,7 +42,9 @@
       <% if (!index && post.comments && ( theme.disqus_shortname || theme.uyan_uid || theme.wumii || theme.livere_shortname || theme.valine.enable || theme.hashover)){ %>
         <%- partial('comment') %>
       <% } %>
-      <%- partial('post/tag') %>
+      <% if (!theme.excerpt_render){ %>
+        <%- partial('post/tag') %>
+      <% } %>
     </footer>
   </div>
   <% if (!index){ %>
