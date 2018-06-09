@@ -22,7 +22,7 @@ keyword: 日新知 日新 知诺 知行诺一 # your keywords
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.rixin.site
+url: https://www.rixin.site
 root: /
 permalink: article/:abbrlink.html    # :category/:abbrlink.html    # :category/:id.html    # :id-:title.html
 permalink_default:
@@ -232,8 +232,8 @@ tag_generator:
 
 # https://github.com/hexojs/hexo-generator-feed
 feed:
-  type: atom     # rss2
-  path: atom.xml # rss2.xml
+  type: atom
+  path: atom.xml
   limit: 100000
 
 # https://github.com/hexojs/hexo-generator-sitemap
