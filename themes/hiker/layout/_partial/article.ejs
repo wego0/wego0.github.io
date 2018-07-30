@@ -19,12 +19,12 @@
           <a href="<%- url_for(post.path) %>#more"><%= __('read_more') %></a>
         </p>
     <% } else { %>
-      <% if(theme.excerpt_render && index) { %>
+      <% if(theme.post.excerpt_on && index) { %>
         <% if (post.itemlistimg){ %>
             <p><img src="<%- post.itemlistimg %>"></p>
         <% } %>
         <p class="article-excerpt-content">
-        <%- truncate(strip_html(post.content), {length: theme.excerpt_length }) %>
+        <%- truncate(strip_html(post.content), {length: theme.post.excerpt_length }) %>
         </p>
         <p class="article-more-link">
           <a href="<%- url_for(post.path) %>#more"><%= __('read_more') %></a>
@@ -39,12 +39,16 @@
       <% if (!index && theme.donate.enable){ %>
         <%- partial('donate') %>
       <% } %>
-      <% if (!index && post.comments && ( theme.disqus_shortname || theme.uyan_uid || theme.wumii || theme.livere_shortname || theme.valine.enable || theme.hashover)){ %>
+      <% if (!index && theme.copyright.enable){ %>
+      <%- partial('copyright') %>
+      <% } %>
+      <% if (!index && post.comments && ( theme.disqus_shortname || theme.wumii || theme.livere_shortname || theme.valine.enable || theme.hashover)){ %>
         <%- partial('comment') %>
       <% } %>
-      <% if (!theme.excerpt_render){ %>
+      <% if (!theme.post.excerpt_on){ %>
         <%- partial('post/tag') %>
       <% } %>
+
     </footer>
   </div>
   <% if (!index){ %>

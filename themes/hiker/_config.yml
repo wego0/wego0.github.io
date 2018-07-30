@@ -191,6 +191,12 @@ donate:
     wechatImage: /css/images/wechat.jpg
     alipayImage: /css/images/alipay.jpg
 
-# 文章摘要渲染方式: 为 true 时将渲染为 html，否则为文本
-excerpt_render: true
-excerpt_length: 168
+# post copyright
+copyright:
+    enable: true
+
+# 首页文章摘要渲染方式: 为 true 时将渲染为 html，否则为文本
+post:
+  excerpt_on: true
+  excerpt_length: 168
+
