@@ -18,7 +18,7 @@ cp .travis/ssh_config ~/.ssh/config
 # Set Git config
 git init
 git config user.name "wego0"
-git config user.email "imovomi@sina.com"
+git config user.email "86368281@qq.com"
 
 # Deploy to GitHub
 hexo deploy
