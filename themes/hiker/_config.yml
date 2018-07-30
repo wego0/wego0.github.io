@@ -8,7 +8,7 @@ menu:
   archives: archives
   categories: categories
   tags: tags
-  blogroll: blogroll
+  # blogroll: blogroll
   about: about
   #search: search
 rss: /atom.xml
