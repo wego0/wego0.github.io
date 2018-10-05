@@ -19,7 +19,7 @@
           <a href="<%- url_for(post.path) %>#more"><%= __('read_more') %></a>
         </p>
     <% } else { %>
-      <% if(theme.post.excerpt_on && index) { %>
+      <% if(theme.post.excerpt_on && index){ %>
         <% if (post.itemlistimg){ %>
             <p><img src="<%- post.itemlistimg %>"></p>
         <% } %>
