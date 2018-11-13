@@ -94,7 +94,7 @@ social:
 # Search
 search:
   insight: false # you need to install `hexo-generator-json-content` before using Insight Search
-  swiftype: true # enter swiftype install key here
+  swiftype: bm_oWRa6xj5dTcmezNwq # enter swiftype install key here
   baidu: false # you need to disable other search engines to use Baidu search, options: true, false
 
 # local_search:
