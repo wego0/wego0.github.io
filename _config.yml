@@ -139,7 +139,6 @@ Plugins:
 - hexo-generator-index
 - hexo-generator-json-content
 - hexo-generator-json-feed
-- hexo-generator-seo-friendly-sitemap
 - hexo-generator-tag
 - hexo-renderer-ejs
 - hexo-renderer-less
@@ -284,16 +283,16 @@ generator_amp:
   templateDir: amp-template
   assetDistDir: amp-dist
   logo:
-    # path: sample/sample-logo.png
-    path: msite/favicon.ico
+    # path: msite/sample-logo.png
+    path: sample/sample-logo.png
     width: 600 # width <= 600px
     height: 60  # width <= 60px
   substituteTitleImage:
-    path: msite/sample-substituteTitleImage.png
+    path: sample/sample-substituteTitleImage.png
     width: 1024 # width >= 696px
     height: 800
   placeholderImg:
-    path: msite/sample-placeholder.png
+    path: sample/sample-placeholder.png
   generateAmpPath: amp/article/:abbrlink.html   #(optional) Custom AMP HTML Path
   theme:
     menu:   #(optional) Sample AMP template's menu option
