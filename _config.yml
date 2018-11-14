@@ -164,6 +164,8 @@ deploy: # github coding 同时部署  多个 deploy 要使用 — type
     github: git@gitwgo:wego0/wego0.github.io.git,master   
     coding: git@codingwgo:wegoo/wegoo.git,coding-pages
 - type: baidu_url_submitter
+- type: baidu_xz_url_submitter
+
 # deploy:
   # type: ftpsync
   # host: 192.168.98.101
@@ -204,6 +206,9 @@ baidu_url_submit:
   host: www.rixin.site ## 在百度站长平台中注册的域名
   token: L4PiiYWHNRZdoIF8 ## 请注意这是您的秘钥，请不要发布在公众仓库里!
   path: baidu_urls.txt ## 文本文档的地址，新链接会保存在此文本文档里
+  xz_appid: 'xxxxxx' ## 你的熊掌号 appid
+  xz_token: 'xxxxxx' ## 你的熊掌号 token
+  xz_count: 10 ## 从所有的提交的数据当中选取最新的10条,该数量跟你的熊掌号而定
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -276,18 +281,19 @@ prism_plugin:
 # hexo-generator-amp
 # The following settings is the quick start options.
 generator_amp:
-  templateDir:  amp-template
+  templateDir: amp-template
   assetDistDir: amp-dist
   logo:
-    path: sample/sample-logo.png
+    # path: sample/sample-logo.png
+    path: msite/favicon.ico
     width: 600 # width <= 600px
     height: 60  # width <= 60px
   substituteTitleImage:
-    path: sample/sample-substituteTitleImage.png
+    path: msite/sample-substituteTitleImage.png
     width: 1024 # width >= 696px
     height: 800
   placeholderImg:
-    path: sample/sample-placeholder.png
+    path: msite/sample-placeholder.png
   generateAmpPath: amp/article/:abbrlink.html   #(optional) Custom AMP HTML Path
   theme:
     menu:   #(optional) Sample AMP template's menu option
