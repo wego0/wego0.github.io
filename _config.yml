@@ -11,15 +11,6 @@ language: zh-CN
 timezone: Asia/Shanghai
 
 
-# custom Site settings
-# more detail check out docs
-SEOTitle: 日新知 日新 知行诺一
-header-img:  # header-img.png 
-email: imovomi@gmail.com # your email
-keyword: 日新知 日新 知诺 知行诺一 # your keywords
-# custom end
-
-
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://www.rixin.site
@@ -105,6 +96,8 @@ pagination_dir: page
 
 
 jsonContent:
+  searchLocal: true
+  searchGoogle: true
   meta: false
   pages: false
   posts:
