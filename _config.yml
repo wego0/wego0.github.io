@@ -303,8 +303,8 @@ generator_amp:
     list_limts: 3   #(optional) This option limit the number of display in the above lists (default:5)
   cache: hexo-generator-amp-cached.json   #(optional) Enable cache (Improve generation speed)
 
-# search:
-  # path: search.xml
-  # field: post
-  # format: html
-  # limit: 10000
+# if your search is enable && search service is 'hexo'
+search:
+  path: search.xml
+  field: all
+  limit: 10000
