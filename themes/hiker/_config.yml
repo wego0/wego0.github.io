@@ -60,9 +60,8 @@ post_catalog:
   enable: true
 
 # 首页文章摘要渲染方式: 为 true 时将渲染为 html，否则为文本
-post:
-  excerpt_on: true
-  excerpt_length: 168
+post_excerpt: true
+post_excerpt_length: 168
 
 # Content
 fancybox: true
@@ -77,7 +76,6 @@ widgets:
 - recent_posts
 - tagcloud
 # - archive
-
 
 
 # Social Links
@@ -101,8 +99,6 @@ search:
     swiftype: # enter swiftype install key here
     baidu: false # you need to disable other search engines to use Baidu search, options: true, false
 
-# local_search:
-  # enable: true
 
 # comment ShortName, you can choose only ONE to display.
 disqus_shortname: 

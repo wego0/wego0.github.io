@@ -13,18 +13,12 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
 
-    <% if (post.excerpt && index){ %>
-      <%- post.excerpt %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= __('read_more') %></a>
-        </p>
-    <% } else { %>
-      <% if(theme.post.excerpt_on && index){ %>
+      <% if (theme.post_excerpt && index){ %>
         <% if (post.itemlistimg){ %>
             <p><img src="<%- post.itemlistimg %>"></p>
         <% } %>
         <p class="article-excerpt-content">
-        <%- truncate(strip_html(post.content), {length: theme.post.excerpt_length }) %>
+        <%- truncate(strip_html(post.content), {length: theme.post_excerpt_length }) %>
         </p>
         <p class="article-more-link">
           <a href="<%- url_for(post.path) %>#more"><%= __('read_more') %></a>
@@ -32,7 +26,6 @@
       <% } else { %>
         <%- post.content %>
       <% } %>
-    <% } %>
 
     </div>
     <footer class="article-footer">
@@ -45,7 +38,7 @@
       <% if (!index && post.comments && ( theme.disqus_shortname || theme.wumii || theme.livere_shortname || theme.valine.enable || theme.hashover)){ %>
         <%- partial('comment') %>
       <% } %>
-      <% if (!theme.post.excerpt_on){ %>
+      <% if (!theme.post_excerpt){ %>
         <%- partial('post/tag') %>
       <% } %>
 
