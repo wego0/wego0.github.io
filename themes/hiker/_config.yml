@@ -4,13 +4,13 @@
 
 # Header Menu
 menu:
-  home: /
-  archives: archives
-  categories: categories
-  tags: tags
-  # blogroll: blogroll
-  about: about
-  #search: search
+  Home: /
+  Archives: archives
+  Categories: categories
+  Tags: tags
+  # Blogroll: blogroll
+  About: about
+  #Search: search
 rss: /atom.xml
 
 since: 2016
@@ -59,6 +59,10 @@ archive_pagination: true
 post_catalog:
   enable: true
 
+# 首页文章摘要渲染方式: 为 true 时将渲染为 html，否则为文本
+post:
+  excerpt_on: true
+  excerpt_length: 168
 
 # Content
 fancybox: true
@@ -93,9 +97,9 @@ social:
 
 # Search
 search:
-  insight: true # you need to install `hexo-generator-json-content` before using Insight Search
-  swiftype: # enter swiftype install key here
-  baidu: false # you need to disable other search engines to use Baidu search, options: true, false
+    insight: true # you need to install `hexo-generator-json-content` before using Insight Search
+    swiftype: # enter swiftype install key here
+    baidu: false # you need to disable other search engines to use Baidu search, options: true, false
 
 # local_search:
   # enable: true
@@ -175,16 +179,6 @@ cnzz_siteid:
 # http://busuanzi.ibruce.info/
 show_busuanzi_view_counts: false
 
-hostedby:
-  enable: true
-  hostedby_url: https://pages.coding.me
-  hostedby_name: Coding Pages
-
-ICP: 
-  enable: true
-  ICP_license: 湘ICP备18004795号-2
-  ICP_url: http://www.miitbeian.gov.cn
-  ICP_text:    # 或 湘ICP备18004795号-1
 
 # donation button
 donate:
@@ -197,8 +191,13 @@ donate:
 copyright:
     enable: true
 
-# 首页文章摘要渲染方式: 为 true 时将渲染为 html，否则为文本
-post:
-  excerpt_on: true
-  excerpt_length: 168
+hostedby:
+  enable: true
+  hostedby_url: https://pages.coding.me
+  hostedby_name: Coding Pages
 
+ICP: 
+  enable: true
+  ICP_license: 湘ICP备18004795号-2
+  ICP_url: http://www.miitbeian.gov.cn
+  ICP_text:    # 或 湘ICP备18004795号-1
