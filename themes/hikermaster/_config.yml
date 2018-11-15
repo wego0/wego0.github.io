@@ -8,28 +8,23 @@ menu:
   Archives: archives
   Categories: categories
   Tags: tags
-  # Blogroll: blogroll
   About: about
-  #Search: search
 rss: /atom.xml
 
-since: 2016
+since: 2013
 
 # Set default keywords (Use a comma to separate)
-keywords: "日新知,日新,知诺,知行诺一"
+keywords: ""
 
 # Put your favicon.ico or avatar.jpg into `hexo-site/themes/hiker/source/` directory.
 avatar: 
   enable: true
   border: true
-  width: 150   #82
-  height: 36   #82
-  top: 27
-  url: css/images/mylogo.png
+  width: 124
+  height: 124
+  top: 0
+  url: css/images/mylogo.jpg
 
-favicon:
-  enable: true
-  url: css/images/favicon.ico
 
 # Homepage
 # eg. home_background_image: [css/images/home-bg.jpg, http://t.cn/RMbvEza]
@@ -39,12 +34,11 @@ home_background_image:
   mode: image
   rolling: true
   url: [css/images/home-bg.jpg, css/images/sample.jpg, https://source.unsplash.com/collection/954550/1920x1080]
-  #text: [111, 222, 333]
 
 home_logo_image:
-  enable: true
+  enable: false
   border: false
-  url: css/images/homelogo.png
+  url: css/images/homelogo.jpg
 
 
 # AboutPage background
@@ -58,10 +52,9 @@ archive_pagination: true
 # Post Article's Content
 post_catalog:
   enable: true
-
-# 首页文章摘要渲染方式: 为 true 时将渲染为 html，否则为文本
+# 开启主页摘要
 post_excerpt: true
-post_excerpt_length: 168
+
 
 # Content
 fancybox: true
@@ -71,25 +64,25 @@ fancybox: true
 sidebar: right
 widgets:
 - social
-# - category
-# - tag
-- recent_posts
+- category
+- tag
 - tagcloud
-# - archive
+- archive
+- recent_posts
 
 
 # Social Links
 # Key is the name of FontAwsome icon.
 # Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
 social:
-  Github: https://github.com/Wegome
-  Weibo: https://www.weibo.com/budaig
+  Github: https://github.com/iTimeTraveler
+  Weibo: http://www.yoursite.com
   Twitter: 
-#  Facebook: 
-#  Google-plus: 
+  Facebook: 
+  Google-plus: 
   Instagram: 
-#  Pinterest: 
-#  Flickr: 
+  Pinterest: 
+  Flickr: 
   email:
 
 
@@ -99,37 +92,15 @@ search:
     swiftype: # enter swiftype install key here
     baidu: false # you need to disable other search engines to use Baidu search, options: true, false
 
-# # Local search
-# # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
-# local_search:
-  # enable: true
-  # # if auto, trigger search by changing input
-  # # if manual, trigger search by pressing enter key or search button
-  # trigger: auto
-  # # show top n results per article, show all results by setting to -1
-  # top_n_per_article: 1
-  # # unescape html strings to the readable one
-  # unescape: false
-
 
 # comment ShortName, you can choose only ONE to display.
+gentie_productKey: #your-gentie-product-key
+duoshuo_shortname: 
 disqus_shortname: 
-livere_shortname: MTAyMC8zNTE5Ny8xMTczMg
+livere_shortname: MTAyMC8yOTQ4MS82MDQ5
 uyan_uid: 
 wumii: 
-# Valine Comment system. https://valine.js.org
-valine:
-  enable: false # 如果你想使用valine，请将值设置为 true
-  appId: 
-  appKey: 
-  notify: false # Mail notify
-  verify: false # Verify code
-  avatar: mm # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
-  placeholder: 闻言如见其人
-  guest_info: nick,mail,link # Comment header info
-  pageSize: 10 # comment list page size
-# Support for Hashover comments system.
-# hashover: true
+
 
 # Code Highlight theme
 # Available value:
@@ -146,8 +117,8 @@ theme_color: random
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
-  - category
-  - tagcloud
+# - category
+# - tagcloud
 # - archive
 
 
@@ -181,31 +152,20 @@ facebook_sdk:
   webmaster:    #true
 
 # CNZZ count
-cnzz_siteid: 
+cnzz_siteid: 1260716016
 
 # busuanzi count
 # http://busuanzi.ibruce.info/
-show_busuanzi_view_counts: false
+show_busuanzi_view_counts: true
 
 
 # donation button
 donate:
     enable: true
-    message: '！赏块 ¥ $ 爽快！!'
-    wechatImage: /css/images/wechat.jpg
-    alipayImage: /css/images/alipay.jpg
-
+    message: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!'
+    wechatImage: https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/WeChanQR.png
+    alipayImage: https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/AliPayQR.jpg
+    
 # post copyright
 copyright:
     enable: true
-
-hostedby:
-  enable: true
-  hostedby_url: https://pages.coding.me
-  hostedby_name: Coding Pages
-
-ICP: 
-  enable: true
-  ICP_license: 湘ICP备18004795号-2
-  ICP_url: http://www.miitbeian.gov.cn
-  ICP_text:    # 或 湘ICP备18004795号-1
