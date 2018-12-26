@@ -28,6 +28,12 @@
         <%- post.content %>
       <% } %>
 
+		<br>
+		<div align="center" class="mobileHide">
+		    <img src="<%- qrcode(url) %>" text="<%= post.title %>">
+			<h4><%= __('post.read_qr') %></h4>
+		</div>    <!-- add -->
+
     </div>
     <footer class="article-footer">
       <% if (!index && theme.donate.enable){ %>
