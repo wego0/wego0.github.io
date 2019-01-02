@@ -28,11 +28,13 @@
         <%- post.content %>
       <% } %>
 
+      <% if (!index){ %>
 		<br />
 		<div align="center" class="mobileHide">
 		    <img src="<%- qrcode(url) %>" text="<%= post.title %>">
 			<h4><%= __('post.read_qr') %></h4>
-		</div>    <!-- add -->
+		</div>
+      <% } %>
 
     </div>
     <footer class="article-footer">
@@ -43,15 +45,17 @@
       <%- partial('copyright') %>
       <% } %>
 
+      <% if (!index){ %>
 		<br />
-      <% if (theme.needmoreshare2.enable){ %>
-        <!-- needsharebutton JS file -->
-        <%- js('need-more-share2/needsharebutton.min') %>
-        <!-- needsharebutton CSS file -->
-        <%- css('need-more-share2/needsharebutton.min') %>
-        <div align="center" style="padding-bottom: 20px" >
-          <button class="btn btn-default need-share-button" data-share-icon-style="<%- theme.needmoreshare2.options.iconStyle %>" data-share-boxForm="<%- theme.needmoreshare2.options.boxForm %>" data-share-position="<%- theme.needmoreshare2.options.position %>" data-share-networks="<%- theme.needmoreshare2.options.networks %>" ><i class="fa fa-share-alt"></i> <%= __('post.shareto') %></button>
-		</div>
+        <% if (theme.needmoreshare2.enable){ %>
+          <!-- needsharebutton JS file -->
+          <%- js('need-more-share2/needsharebutton.min') %>
+          <!-- needsharebutton CSS file -->
+          <%- css('need-more-share2/needsharebutton.min') %>
+          <div align="center" style="padding-bottom: 20px" >
+            <button class="btn btn-default need-share-button" data-share-icon-style="<%- theme.needmoreshare2.options.iconStyle %>" data-share-boxForm="<%- theme.needmoreshare2.options.boxForm %>" data-share-position="<%- theme.needmoreshare2.options.position %>" data-share-networks="<%- theme.needmoreshare2.options.networks %>" ><i class="fa fa-share-alt"></i> <%= __('post.shareto') %></button>
+		  </div>
+        <% } %>
       <% } %>
 
       <% if (!index && post.comments && ( theme.disqus_shortname || theme.wumii || theme.livere_shortname || theme.valine.enable || theme.hashover)){ %>
