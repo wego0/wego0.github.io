@@ -215,7 +215,7 @@ hostedby:
   # hostedby_name: netlify
 
 ICP: 
-  enable: true
+  enable: false
   ICP_license: 湘ICP备18004795号-2
   ICP_url: http://www.miitbeian.gov.cn
   ICP_text:    # 或 湘ICP备18004795号-1

@@ -28,7 +28,7 @@
         <%- post.content %>
       <% } %>
 
-      <% if (!index){ %>
+      <% if (!index && is_post() ){ %>
 		<br />
 		<div align="center" class="mobileHide">
 		    <img src="<%- qrcode(url) %>" text="<%= post.title %>">
@@ -45,7 +45,7 @@
       <%- partial('copyright') %>
       <% } %>
 
-      <% if (!index){ %>
+      <% if (!index && is_post() && theme.needmoreshare2.enable ){ %>
 		<br />
         <% if (theme.needmoreshare2.enable){ %>
           <!-- needsharebutton JS file -->
@@ -61,7 +61,7 @@
       <% if (!index && post.comments && ( theme.disqus_shortname || theme.wumii || theme.livere_shortname || theme.valine.enable || theme.hashover)){ %>
         <%- partial('comment') %>
       <% } %>
-      <% if (is_post()){ %>
+      <% if (index || is_post() ){ %>
         <%- partial('post/tag') %>
       <% } %>
 
