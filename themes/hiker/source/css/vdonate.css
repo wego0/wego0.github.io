@@ -128,9 +128,9 @@
 
 .donate-btn .donate-qrcode {
 	display: inline-block;
-	margin-right: 5px;
+	//margin-right: 5px;
 	vertical-align: -0.2em;
-	width: 16px;
+	//width: 16px;
 	height: 16px;
 	background: url("https://ooo.0o0.ooo/2017/03/09/58c16b1f3eaa4.png") no-repeat
 }
