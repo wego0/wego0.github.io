@@ -25,4 +25,4 @@ deploy:
   on:
     branch: source
 after_success:
-- firebase deploy --non-interactive --token $FIREBASE_TOKEN
+  - firebase deploy --non-interactive --token $FIREBASE_TOKEN
