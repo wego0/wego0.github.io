@@ -25,5 +25,3 @@ deploy:
   skip_cleanup: true
   on:
     branch: source
-after_deploy:
-  - firebase deploy --non-interactive --token $FIREBASE_TOKEN

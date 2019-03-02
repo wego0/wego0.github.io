@@ -23,3 +23,6 @@ git config user.email "imovomi@sina.com"
 # Deploy to GitHub
 hexo deploy
 rm -rf ~/.ssh
+
+# Deploy to Firebase
+firebase deploy --non-interactive --token $FIREBASE_TOKEN
