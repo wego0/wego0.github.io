@@ -23,3 +23,6 @@ deploy:
   skip_cleanup: true
   on:
     branch: source
+after_success:
+# Deploy to Firebase
+  - firebase deploy --non-interactive --token $1/dJ2xD2_g9dFJfC1VyGIAsc9PHIBTPpjJbwMywllJyrw
