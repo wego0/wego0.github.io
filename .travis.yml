@@ -16,6 +16,7 @@ env:
   token:
     secure: AHhlpLNrlugENR6LxPDFjtCpj2gFKlhGk06Z6ZBQqryDozjxs9h2S6wY//Q270/XhfaBrX2BsUsiajgB+zO0PGS2LGsJNCp7JdGDGgkHZtiX5VsN0Rs3w8YKtwttv0MWtGg3PBwdCO+pRgDsTIGniaOI1a5Und3rptbWZBSTE3pnZ9mOmq1GA1CpkC5srGd7QyfJ2zUmAC6tINr9nFv7BScw0224Mz2MZB46yPxwPTOSkMgFoL1XuM1/XbBHLyubCy9bnjqab57/PQc63UT8+xjI0V/2QInZA/N7UXHKQsMzPnxYOPxbg7sTUzMIUzAoDRl3XvzZ/CaCGKSUC4mE0xpRsY68lzjKgJXCVbgFrAvjOyOKdbhvNY8Lnl/ZiY2UiR1dB6SzozUlADWb27K6lXbDjSwzkd/cJeuPZCOKxD1zo+lxzz/TwenT2+K2jC/aj91bwSdeg6jsRy81szaAYQSEDaRf+kPSXmTaLdO1NMIDsH6GMjRWWYOakjNCnrHpIldjn2dK1MnVPIej5j05uPEAqo+ywoFE4j8tE7A1GBf5zy9xgPF0KqvWBi+Kkgs/hA2oE8PYsc2hxTm2QsuOlo5Nm/VmqmqBjEFX773BJKMTvck7En9GPTMUHfNEndS4wmE0ljF7Arqk/RPRiadfX8r7GHoJiA1MJorAth8nZOs=
 before_install:
+- npm install -g --silent firebase-tools
 - openssl aes-256-cbc -K $encrypted_6a5d0d2bb8ce_key -iv $encrypted_6a5d0d2bb8ce_iv
   -in .travis/4gcwgo.enc -out ~/.ssh/4gcwgo -d
 - export TZ='Asia/Shanghai'
