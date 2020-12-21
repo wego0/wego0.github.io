@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /js/
+Disallow: /lib/
+Disallow: /css/
+Disallow: /fancybox/
+Allow: /
+Sitemap: http://www.rixin.site/sitemap.xml
